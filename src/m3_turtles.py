@@ -29,10 +29,11 @@ import rosegraphics as rg
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
 #   then selector  Mark Directory As --> Sources Root
+#   Watch the red underlines on the line of code above disappear as you do that step.
 #   You will do that once for every project that uses rosegraphics so get used to it. :)
 #
 #   Run this module by Right clicking in this window and select Run 'filename'
@@ -59,6 +60,7 @@ nadia = rg.SimpleTurtle()
 # ----------------------------------------------------------------------
 # Ask the SimpleTurtle objects to do things:
 # ----------------------------------------------------------------------
+nadia.speed = 10
 nadia.forward(100)
 nadia.left(90)
 nadia.forward(200)
@@ -68,14 +70,18 @@ nadia.forward(200)
 # ----------------------------------------------------------------------
 akil = rg.SimpleTurtle('turtle')
 akil.pen = rg.Pen('red', 30)
-akil.speed = 1
+akil.speed = 10
 akil.backward(50)
 akil.left(90)
 akil.forward(50)
 
+akil.pen = rg.Pen('aquamarine', 15)
+akil.forward(50)
+
+
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
@@ -108,13 +114,27 @@ akil.forward(50)
 #
 ########################################################################
 
+dave = rg.SimpleTurtle('turtle')
+dave.speed = 20
+dave.pen = rg.Pen('lavender', 5)
+dave.right(90)
+dave.forward(100)
+
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Run one more time to be sure that all is still OK.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #
 #   Then COMMIT and Push your work using the VCS menu option.
+#
+#   Reminder of those steps...
+#   COMMIT your work by selecting VCS from the menu bar, then select Commit Changes
+#   Make sure only the files you want to commit are checked and optionally
+#   add a quick Commit message to describe your work.  Then hover over the
+#   Commit button and select Commit and Push.  Commit saves the work to
+#   your computer.  "and Push" saves a copy of your work up into your Github
+#   repository (saving to the cloud is a better way to permanently safe work).
 #
 #   You can COMMIT as often as you like.  DO FREQUENT COMMITS.
 #
